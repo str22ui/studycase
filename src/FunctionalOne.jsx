@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 function FunctionalOne() {
@@ -9,4 +8,4 @@ function FunctionalOne() {
     );
   }
   
-  export default FunctionalOne;
+export default FunctionalOne;

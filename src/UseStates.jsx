@@ -5,6 +5,7 @@ const UseStates = () => {
 
     return (
        <div>
+        <h2>Ini useState</h2>
            <p>You clicked {count} times</p>
           <button onClick={() => setCount(count + 1)}>Click me</button>
         </div>

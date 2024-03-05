@@ -1,5 +1,6 @@
 import './App.css';
 import ClassOne from './ClassOne';
+import Coba from './Coba';
 import EventHandling from './EventHandling';
 import FunctionalOne from './FunctionalOne';
 import LoopingList from './LoopingList';
@@ -15,6 +16,7 @@ function App() {
     <div>
       <h1>Hello, world</h1>
       {/* //Menampilkan Functional Component */}
+      <Coba />
       <FunctionalOne /> 
 
       {/* //Menampilkan Class Component */}

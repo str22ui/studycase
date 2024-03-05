@@ -6,7 +6,7 @@ const UseRef = () => {
     const handleClick = () => {
         inputRef.current.focus();
     };
-
+    
     return (
         <div>
             <input ref={inputRef} type="text" />
