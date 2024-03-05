@@ -3,6 +3,7 @@ import ClassOne from './ClassOne';
 import Coba from './Coba';
 import EventHandling from './EventHandling';
 import FunctionalOne from './FunctionalOne';
+import Halo from './Halo';
 import LoopingList from './LoopingList';
 import Props from './Props';
 import States from './States';
@@ -17,6 +18,9 @@ function App() {
       <h1>Hello, world</h1>
       {/* //Menampilkan Functional Component */}
       <Coba />
+      
+      <Halo />
+      
       <FunctionalOne /> 
 
       {/* //Menampilkan Class Component */}
