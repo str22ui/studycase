@@ -1,24 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ClassOne from './ClassOne';
+import EventHandling from './EventHandling';
+import FunctionalOne from './FunctionalOne';
+import LoopingList from './LoopingList';
+import Props from './Props';
+import States from './States';
+import UseContext from './UseContext';
+import UseEffect from './UseEffect';
+import UseRef from './UseRef';
+import UseStates from './UseStates';
+import UseRefOne from './useRefOne';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <h1>Hello, world</h1>
+      {/* //Menampilkan Functional Component */}
+      <FunctionalOne /> 
+
+      {/* //Menampilkan Class Component */}
+      <ClassOne />
+
+      {/* //Menampilkan Props */}
+      <Props />
+
+      {/* //Menampilkan States */}
+      <States />
+
+      {/* Menampilkan UseStates */}
+      <UseStates />
+
+      {/* //Menampilkan UseEffect */}
+      <UseEffect />
+
+      {/* //Menampilkan UseRef */}
+      <UseRef />
+
+      <UseRefOne />
+
+      {/* Menampilkan UseContext */}
+      <UseContext />
+
+      {/* Menampilkan Event Handling */}
+      <EventHandling />
+
+      <LoopingList />
+      </div>
   );
 }
 
