@@ -3,8 +3,8 @@ import React from 'react';
 // Array berisi data
 const fruits = ['Apple', 'Banana', 'Orange', 'Mango', 'Grapes'];
 
-// Komponen yang melakukan looping list tanpa key
-const FruitListWithoutKey = ({ fruits }) => {
+// Komponen yang melakukan looping list 
+const FruitList = ({ fruits }) => {
   return (
     <ul>
       {fruits.map((fruit) => (
@@ -18,8 +18,8 @@ const FruitListWithoutKey = ({ fruits }) => {
 function LooppingList() {
   return (
     <div>
-      <h2>Daftar Buah tanpa Key:</h2>
-      <FruitListWithoutKey fruits={fruits} />
+      <h2>Daftar Buah :</h2>
+      <FruitList fruits={fruits} />
     </div>
   );
 }
