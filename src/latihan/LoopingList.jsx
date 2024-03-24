@@ -36,13 +36,14 @@ export default LooppingList;
 //     <ul>
 //       {names.map((name, index) => (
 //         <li key={index}>{name}</li>
+//         // <li key={name}>{name}</li>
 //       ))}
 //     </ul>
 //   );
 // };
 
 // // Komponen induk
-// function App() {
+// function LooppingList() {
 //   return (
 //     <div>
 //       <h2>Daftar Nama:</h2>
@@ -50,4 +51,31 @@ export default LooppingList;
 //     </div>
 //   );
 // }
-// export default App;
+// export default LooppingList;
+
+// === penggunaan index ===
+// const names = ["John", "Jane", "Bob"];
+
+// const NameList = () => {
+//   return (
+//     <ul>
+//       {names.map((name, index) => (
+//         <li key={index}>{index + 1}. {name}</li>
+//       ))}
+//     </ul>
+//   );
+// };
+
+// const colors = ["red", "blue"];
+
+// const NameList = () => {
+//   return (
+//     <ul>
+//       {names.map((name, index) => (
+//         <li key={index} style={{ color: colors[index % 2] }}>
+//           {name}
+//         </li>
+//       ))}
+//     </ul>
+//   );
+// };

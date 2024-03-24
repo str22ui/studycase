@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
-import FunctionalOne from './FunctionalOne';
+import FunctionalOne from './latihan/FunctionalOne';
 
 test('renders learn react link', () => {
   render(<App />);

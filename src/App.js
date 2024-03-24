@@ -1,25 +1,23 @@
-import './App.css';
-import EventHandlingOne from './EventHandlingOne';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import LoopingList from './latihan/LoopingList'; 
+import Props from './latihan/Props'; // 
+import MiniOne from './latihan/MiniOneb'; // 
+import Routerr from './Routerr';
 
-
-import MiniOne from './MiniOne';
-import UseContext from './UseContext';
-import UseContextOne from './UseContextOne';
-import UseEffectTwo from './UseEffectOne';
-
-
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Hello, world</h1>
-     
-
-      <MiniOne />
-      <UseEffectTwo />
-      <UseContextOne />
-      <EventHandlingOne />
+    <Router>
+      <div>
+        <Routerr /> {/* Komponen navigasi dengan Link */}
+        <Routes>
+          <Route exact path="/" element={<LoopingList />} /> 
+          <Route path="/props" element={<Props />} /> 
+          <Route path="/minione" element={<MiniOne />} /> 
+        </Routes> 
       </div>
+    </Router>
   );
-}
+};
 
 export default App;

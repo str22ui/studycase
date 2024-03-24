@@ -1,16 +1,41 @@
-const reportWebVitals = onPerfEntry => {
-  if (onPerfEntry && onPerfEntry instanceof Function) {
-    import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
-      getCLS(onPerfEntry);
-      getFID(onPerfEntry);
-      getFCP(onPerfEntry);
-      getLCP(onPerfEntry);
-      getTTFB(onPerfEntry);
-    });
-  }
-};
+import React from 'react';
+import gambarSaya from './jungkook.jpg';
 
-export default reportWebVitals;
+
+const Images = () => {
+  return (
+    <div>
+        <h1>Foto Jungkook</h1>
+        <img src={gambarSaya} alt="" width={300} height={200} />
+    </div>
+  )
+}
+
+export default Images
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ===url relatif===
 
@@ -55,4 +80,3 @@ export default reportWebVitals;
 // }
 
 // export default Images
-
